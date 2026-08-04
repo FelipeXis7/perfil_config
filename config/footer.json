@@ -1,3 +1,13 @@
 {
-  "footerHtml": "• Desenvolvido por <span style=\"color: #10b981; font-weight: 700;\">Sd Aguiar</span> • RITEx 863 - 4027"
+  "titulo": "Equipe de Desenvolvimento",
+  "criador": {
+    "nome": "Sd AGUIAR",
+    "funcao": "Criador e Desenvolvedor",
+    "desde": "2025",
+    "contato": "RITEx 863 - 4027"
+  },
+  "colaborador": {
+    "nome": "3º Sgt GABRIEL AUGUSTO",
+    "funcao": "Operação e Manutenção"
+  }
 }
