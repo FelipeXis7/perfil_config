@@ -8,42 +8,54 @@
   },
   "changelogs": [
     {
-      "id": "1.0.2",
+      "id": "v1.02",
       "titulo": "Sistema de Escalas Configurável e Melhorias Operacionais",
-      "versao": "V1.0.2",
+      "versao": "V1.02",
       "categoria": "Melhoria",
-      "autor": "SD AGUIAR",
+      "autor": "SD.AGUIAR",
       "data_hora": "2026-05-21T09:36:00-03:00",
       "blocos": [
         {
           "titulo": "Escalas configuráveis",
-          "descricao": "Agora o sistema permite criar, editar, ativar, desativar e apagar escalas conforme a necessidade da OM."
+          "descricao": "Agora o sistema permite criar, editar, ativar, desativar e apagar escalas conforme a necessidade da OM. As escalas deixaram de depender apenas dos modelos fixos antigos e passaram a usar um catálogo configurável, com prioridade, duração do serviço, tipo de dia permitido, postos/graduações autorizados, regras de descanso e texto próprio para publicação em BI."
         },
         {
           "titulo": "Geração de escala aprimorada",
-          "descricao": "A geração passou a respeitar as configurações individuais de cada escala."
+          "descricao": "A geração passou a respeitar as configurações individuais de cada escala, incluindo prioridade, dias permitidos, calendário/agendamento, postos autorizados e impedimentos vinculados às escalas configuradas."
         },
         {
           "titulo": "Agendamentos e B ADM QGEx",
-          "descricao": "Foi adicionada compatibilidade para escalas agendadas por militar."
+          "descricao": "Foi adicionada compatibilidade para escalas agendadas por militar, permitindo marcar diretamente no calendário os dias em que cada militar estará de serviço. Esse modelo atende escalas como B ADM QGEx, onde o serviço pode vir definido previamente por nome e data."
         },
         {
           "titulo": "Interface e responsividade",
-          "descricao": "Foram feitas melhorias no menu responsivo, filtros e calendários."
+          "descricao": "Foram feitas melhorias no menu responsivo, nas listas por antiguidade, nos filtros, nos calendários e na atualização imediata de dias pretos/vermelhos. O sistema também recebeu correções visuais e ajustes de caracteres para melhorar a leitura e evitar textos quebrados."
         }
       ]
     },
     {
-      "id": "1.0.3",
-      "titulo": "Correções gerais",
-      "versao": "V1.0.3",
-      "categoria": "Correção",
-      "autor": "CB AGUIAR",
-      "data_hora": "2026-09-15T18:00:00-03:00",
+      "id": "v1.01",
+      "titulo": "Pacote de Inteligência e Segurança",
+      "versao": "V1.01",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-05-04T21:29:00-03:00",
       "blocos": [
         {
-          "titulo": "Permissões de perfil",
-          "descricao": "Corrigida a aplicação das permissões configuráveis."
+          "titulo": "Rastreabilidade de Preterição por Descanso",
+          "descricao": "Implementada lógica avançada na memória de cálculo (Auditoria de Folga). Agora, se um militar (ex: Sgt SAFUS) for o próximo da fila, mas for pulado por estar \"saindo de serviço\", o sistema registrará esse evento. Na próxima escala em que ele for selecionado, a auditoria exibirá o histórico, justificando que ele assumiu a vaga por ter sido impedido anteriormente pela regra de descanso de 24h/48h. Isso garante 100% de transparência e evita questionamentos sobre a justiça da folga."
+        },
+        {
+          "titulo": "Nova Central de Updates",
+          "descricao": "Inaugurada a aba de \"Updates\", visível para todos os níveis de acesso (Administradores e Consulta). Esta seção serve como o Diário de Bordo do software, onde todas as manutenções técnicas, novas funcionalidades e correções de bugs serão detalhadas. O objetivo é manter todo o efetivo ciente das constantes melhorias e da evolução das regras de negócio aplicadas ao motor de escalas."
+        },
+        {
+          "titulo": "Hub de Navegação em Todas as Abas",
+          "descricao": "Adicionada uma barra lateral/rodapé de \"Links Úteis\" integrada em todas as interfaces do sistema."
+        },
+        {
+          "titulo": "Unificação de Cadastros e Segurança",
+          "descricao": "Operação de limpeza tática: a aba de \"Criação de Usuário\" foi extinta para centralizar o controle. Agora, a permissão de acesso (Admin ou Consulta) é definida diretamente na ficha do militar, durante o cadastro no efetivo. Para maior segurança, os logins são criados sem senha prévia; o militar receberá um link de ativação para definir sua própria senha pessoal e intransferível, garantindo a integridade dos logs de auditoria e eliminando o compartilhamento de senhas padrões."
         }
       ]
     }
