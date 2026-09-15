@@ -5,5 +5,47 @@
     "funcao": "Desenvolvedor",
     "desde": "2025",
     "contato": "RITEx 863 - 4027"
-  }
+  },
+  "changelogs": [
+    {
+      "id": "1.0.2",
+      "titulo": "Sistema de Escalas Configurável e Melhorias Operacionais",
+      "versao": "V1.0.2",
+      "categoria": "Melhoria",
+      "autor": "SD AGUIAR",
+      "data_hora": "2026-05-21T09:36:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Escalas configuráveis",
+          "descricao": "Agora o sistema permite criar, editar, ativar, desativar e apagar escalas conforme a necessidade da OM."
+        },
+        {
+          "titulo": "Geração de escala aprimorada",
+          "descricao": "A geração passou a respeitar as configurações individuais de cada escala."
+        },
+        {
+          "titulo": "Agendamentos e B ADM QGEx",
+          "descricao": "Foi adicionada compatibilidade para escalas agendadas por militar."
+        },
+        {
+          "titulo": "Interface e responsividade",
+          "descricao": "Foram feitas melhorias no menu responsivo, filtros e calendários."
+        }
+      ]
+    },
+    {
+      "id": "1.0.3",
+      "titulo": "Correções gerais",
+      "versao": "V1.0.3",
+      "categoria": "Correção",
+      "autor": "CB AGUIAR",
+      "data_hora": "2026-09-15T18:00:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Permissões de perfil",
+          "descricao": "Corrigida a aplicação das permissões configuráveis."
+        }
+      ]
+    }
+  ]
 }
