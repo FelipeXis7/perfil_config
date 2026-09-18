@@ -775,34 +775,34 @@
     },
     {
       "id": "v1.32",
-      "titulo": "Reforço da Proteção de Credenciais, Sessões e Requisições",
+      "titulo": "Reforço da Proteção de Acesso, Sessões e Dados Sensíveis",
       "versao": "V1.32",
       "categoria": "Segurança",
       "autor": "SD.AGUIAR",
       "data_hora": "2026-08-30T10:03:00-03:00",
       "blocos": [
         {
-          "titulo": "Segurança: Proteção das senhas",
-          "descricao": "Adicionado armazenamento com hash scrypt e salt, migração de senhas legadas e validação de tamanho. As credenciais protegidas não são enviadas ao navegador nas consultas de acesso."
+          "titulo": "Proteção das credenciais",
+          "descricao": "Foram reforçados os mecanismos de proteção das credenciais dos usuários, com melhorias no armazenamento das senhas e no tratamento de informações sensíveis durante as consultas de acesso."
         },
         {
-          "titulo": "Segurança: Sessão por cookie",
-          "descricao": "A autenticação passou a contar com cookie de sessão protegido, encerramento pelo servidor e verificações de origem das requisições."
+          "titulo": "Controle de sessão",
+          "descricao": "A autenticação recebeu melhorias no controle de sessão, no encerramento de acessos e na validação das requisições realizadas pelo navegador."
         },
         {
-          "titulo": "Segurança: Limites de tentativas",
-          "descricao": "Adicionados limitadores para login, primeiro acesso, confirmação de códigos, redefinição de senha e requisições da aplicação."
+          "titulo": "Prevenção contra abuso",
+          "descricao": "Foram adicionadas proteções contra tentativas repetidas de acesso, validação e recuperação de conta, reduzindo riscos de uso indevido do sistema."
         },
         {
-          "titulo": "Segurança: Arquivos e conteúdo",
-          "descricao": "Reforçadas a publicação restrita de arquivos, as validações de imagens e anexos e a limpeza do HTML de conteúdos editáveis."
+          "titulo": "Validação de arquivos e conteúdo",
+          "descricao": "As rotinas de envio, publicação e validação de arquivos, imagens, anexos e conteúdos editáveis receberam verificações adicionais de segurança."
         },
         {
-          "titulo": "Segurança: Dados no navegador",
-          "descricao": "Removido o cache persistente antigo do efetivo, mantendo os dados pessoais desse carregamento em memória durante o uso."
+          "titulo": "Tratamento de dados no navegador",
+          "descricao": "O tratamento de dados pessoais no navegador foi ajustado para reduzir retenções desnecessárias e melhorar a proteção das informações durante o uso do sistema."
         }
       ]
-    },
+    }
     {
       "id": "v1.33",
       "titulo": "Sincronização entre Computadores e Atualização das Permissões",
