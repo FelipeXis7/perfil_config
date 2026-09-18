@@ -1005,27 +1005,27 @@
     },
     {
       "id": "v1.41",
-      "titulo": "Ferramentas de Backup Criptografado e Verificação de Segurança",
+      "titulo": "Ferramentas de Backup Seguro e Verificação do Sistema",
       "versao": "V1.41",
       "categoria": "Segurança",
       "autor": "SD.AGUIAR",
       "data_hora": "2026-09-16T15:40:00-03:00",
       "blocos": [
         {
-          "titulo": "Nova função: Proteção das cópias",
-          "descricao": "Adicionados utilitários para criar backups criptografados e restaurar seu conteúdo, utilizando AES-256-GCM."
+          "titulo": "Proteção das cópias de segurança",
+          "descricao": "Foram adicionadas ferramentas para criação e restauração de cópias de segurança protegidas, reforçando a preservação dos dados em procedimentos de manutenção e recuperação."
         },
         {
-          "titulo": "Nova função: Rotação de segredos",
-          "descricao": "Incluído utilitário para renovar segredos e ajustar credenciais conforme a configuração do ambiente."
+          "titulo": "Atualização de credenciais sensíveis",
+          "descricao": "Foi incluído apoio técnico para renovação de credenciais sensíveis do ambiente, facilitando procedimentos de manutenção segura."
         },
         {
-          "titulo": "Infraestrutura: Verificações de segurança",
-          "descricao": "Adicionados scripts de checagem estática e de execução, configuração SQL de segurança e orientações para implantação."
+          "titulo": "Verificações de segurança",
+          "descricao": "Foram adicionadas rotinas de verificação para apoiar a identificação preventiva de inconsistências, configurações inadequadas e riscos operacionais."
         },
         {
-          "titulo": "Infraestrutura: Dependências declaradas",
-          "descricao": "O projeto passou a declarar versões das dependências de servidor e bibliotecas de planilhas, e-mail, banco e tratamento de conteúdo. Foram incluídos testes específicos de permissões, equipe pública e redefinição por SMTP."
+          "titulo": "Controle de dependências e testes",
+          "descricao": "O projeto passou a declarar de forma mais organizada suas dependências técnicas e recebeu testes adicionais relacionados a permissões, acesso público controlado e recuperação de conta."
         }
       ]
     }
