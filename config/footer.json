@@ -802,7 +802,7 @@
           "descricao": "O tratamento de dados pessoais no navegador foi ajustado para reduzir retenções desnecessárias e melhorar a proteção das informações durante o uso do sistema."
         }
       ]
-    }
+    },
     {
       "id": "v1.33",
       "titulo": "Sincronização entre Computadores e Atualização das Permissões",
@@ -979,27 +979,27 @@
     },
     {
       "id": "v1.40",
-      "titulo": "Suporte a PostgreSQL e Ferramentas de Implantação",
+      "titulo": "Evolução da Infraestrutura e Preparação para Implantação",
       "versao": "V1.40",
       "categoria": "Infraestrutura",
       "autor": "SD.AGUIAR",
       "data_hora": "2026-09-15T11:09:00-03:00",
       "blocos": [
         {
-          "titulo": "Nova função: Banco PostgreSQL",
-          "descricao": "Adicionada camada de acesso ao PostgreSQL, mantendo compatibilidade com o modo SQLite e configuração por variáveis de ambiente."
+          "titulo": "Estrutura de banco de dados",
+          "descricao": "Foi adicionada uma nova camada de acesso a banco de dados, preparando o sistema para ambientes mais robustos e mantendo compatibilidade com a estrutura já utilizada."
         },
         {
-          "titulo": "Nova função: Migração do banco",
-          "descricao": "Incluído utilitário para migrar a base SQLite para PostgreSQL, com verificações de conteúdo previstas no processo."
+          "titulo": "Migração de dados",
+          "descricao": "Foi incluído um utilitário para apoiar a migração da base de dados, com etapas de verificação para preservar a integridade das informações durante o processo."
         },
         {
-          "titulo": "Infraestrutura: Implantação documentada",
-          "descricao": "Adicionados guias de migração, configuração de e-mail, atualização em Linux e exemplo de configuração do Nginx."
+          "titulo": "Documentação de implantação",
+          "descricao": "Foram adicionados guias técnicos para apoiar a configuração, atualização e implantação do sistema em ambiente de servidor."
         },
         {
-          "titulo": "Infraestrutura: Pacote para outra organização",
-          "descricao": "Incluído pacote de distribuição para implantação em uma nova organização, com documentação e utilitário para criação do primeiro operador. A presença desses arquivos não comprova que a implantação tenha sido executada."
+          "titulo": "Pacote para nova implantação",
+          "descricao": "Foi incluído um pacote de apoio para implantação em nova organização, com documentação e ferramenta para configuração inicial do primeiro operador."
         }
       ]
     },
