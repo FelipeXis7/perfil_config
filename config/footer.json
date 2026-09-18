@@ -8,6 +8,32 @@
   },
   "changelogs": [
     {
+      "id": "v1.01",
+      "titulo": "Pacote de Inteligência e Segurança",
+      "versao": "V1.01",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-05-04T21:29:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Rastreabilidade de Preterição por Descanso",
+          "descricao": "Implementada lógica avançada na memória de cálculo (Auditoria de Folga). Agora, se um militar (ex: Sgt SAFUS) for o próximo da fila, mas for pulado por estar \"saindo de serviço\", o sistema registrará esse evento. Na próxima escala em que ele for selecionado, a auditoria exibirá o histórico, justificando que ele assumiu a vaga por ter sido impedido anteriormente pela regra de descanso de 24h/48h. Isso garante 100% de transparência e evita questionamentos sobre a justiça da folga."
+        },
+        {
+          "titulo": "Nova Central de Updates",
+          "descricao": "Inaugurada a aba de \"Updates\", visível para todos os níveis de acesso (Administradores e Consulta). Esta seção serve como o Diário de Bordo do software, onde todas as manutenções técnicas, novas funcionalidades e correções de bugs serão detalhadas. O objetivo é manter todo o efetivo ciente das constantes melhorias e da evolução das regras de negócio aplicadas ao motor de escalas."
+        },
+        {
+          "titulo": "Hub de Navegação em Todas as Abas",
+          "descricao": "Adicionada uma barra lateral/rodapé de \"Links Úteis\" integrada em todas as interfaces do sistema."
+        },
+        {
+          "titulo": "Unificação de Cadastros e Segurança",
+          "descricao": "Operação de limpeza tática: a aba de \"Criação de Usuário\" foi extinta para centralizar o controle. Agora, a permissão de acesso (Admin ou Consulta) é definida diretamente na ficha do militar, durante o cadastro no efetivo. Para maior segurança, os logins são criados sem senha prévia; o militar receberá um link de ativação para definir sua própria senha pessoal e intransferível, garantindo a integridade dos logs de auditoria e eliminando o compartilhamento de senhas padrões."
+        }
+      ]
+    },
+    {
       "id": "v1.02",
       "titulo": "Sistema de Escalas Configurável e Melhorias Operacionais",
       "versao": "V1.02",
@@ -34,28 +60,972 @@
       ]
     },
     {
-      "id": "v1.01",
-      "titulo": "Pacote de Inteligência e Segurança",
-      "versao": "V1.01",
-      "categoria": "Melhoria",
+      "id": "v1.03",
+      "titulo": "Perfis de Acesso Configuráveis e Permissões por Recurso",
+      "versao": "V1.03",
+      "categoria": "Nova função",
       "autor": "SD.AGUIAR",
-      "data_hora": "2026-05-04T21:29:00-03:00",
+      "data_hora": "2026-07-01T12:23:00-03:00",
       "blocos": [
         {
-          "titulo": "Rastreabilidade de Preterição por Descanso",
-          "descricao": "Implementada lógica avançada na memória de cálculo (Auditoria de Folga). Agora, se um militar (ex: Sgt SAFUS) for o próximo da fila, mas for pulado por estar \"saindo de serviço\", o sistema registrará esse evento. Na próxima escala em que ele for selecionado, a auditoria exibirá o histórico, justificando que ele assumiu a vaga por ter sido impedido anteriormente pela regra de descanso de 24h/48h. Isso garante 100% de transparência e evita questionamentos sobre a justiça da folga."
+          "titulo": "Nova função: Catálogo de perfis",
+          "descricao": "Adicionado configurador para criar, renomear, ordenar e excluir perfis de acesso, definir o perfil padrão e escolher as abas e operações disponíveis para cada grupo de usuários."
         },
         {
-          "titulo": "Nova Central de Updates",
-          "descricao": "Inaugurada a aba de \"Updates\", visível para todos os níveis de acesso (Administradores e Consulta). Esta seção serve como o Diário de Bordo do software, onde todas as manutenções técnicas, novas funcionalidades e correções de bugs serão detalhadas. O objetivo é manter todo o efetivo ciente das constantes melhorias e da evolução das regras de negócio aplicadas ao motor de escalas."
+          "titulo": "Nova função: Alcance das permissões",
+          "descricao": "Os perfis podem delimitar as escalas atribuíveis, o efetivo que pode ser editado, a administração de acessos e o alcance de consulta e encerramento de impedimentos."
         },
         {
-          "titulo": "Hub de Navegação em Todas as Abas",
-          "descricao": "Adicionada uma barra lateral/rodapé de \"Links Úteis\" integrada em todas as interfaces do sistema."
+          "titulo": "Melhoria: Validação no servidor",
+          "descricao": "As permissões são verificadas nas operações do servidor, além da exibição dos botões, abrangendo geração, fechamento, trocas, cadastros, documentos e configurações."
+        }
+      ]
+    },
+    {
+      "id": "v1.04",
+      "titulo": "Responsável, Auxiliares e Gestão Descentralizada das Escalas",
+      "versao": "V1.04",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-07-04T13:26:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Equipe e acessos por escala",
+          "descricao": "Cada escala passa a contar com responsável e auxiliares vinculados, permitindo distribuir a gestão operacional entre os escalantes."
         },
         {
-          "titulo": "Unificação de Cadastros e Segurança",
-          "descricao": "Operação de limpeza tática: a aba de \"Criação de Usuário\" foi extinta para centralizar o controle. Agora, a permissão de acesso (Admin ou Consulta) é definida diretamente na ficha do militar, durante o cadastro no efetivo. Para maior segurança, os logins são criados sem senha prévia; o militar receberá um link de ativação para definir sua própria senha pessoal e intransferível, garantindo a integridade dos logs de auditoria e eliminando o compartilhamento de senhas padrões."
+          "titulo": "Melhoria: Sincronização dos vínculos",
+          "descricao": "Os vínculos da equipe são sincronizados com as escalas permitidas no acesso do usuário. A configuração também permite definir quem pode gerir operações e aprovar trocas."
+        },
+        {
+          "titulo": "Correção: Permissões após transferência",
+          "descricao": "O acesso concedido pela responsabilidade acompanha o responsável atual. A transferência deixa de manter privilégios decorrentes da antiga propriedade da escala."
+        }
+      ]
+    },
+    {
+      "id": "v1.05",
+      "titulo": "Composição das Escalas por Funções, Vagas e Efetivo",
+      "versao": "V1.05",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-07-05T12:45:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Funções dentro da escala",
+          "descricao": "O catálogo configurável foi ampliado para permitir múltiplas funções na mesma escala, com nomes, ordem, quantidade de vagas e critérios próprios."
+        },
+        {
+          "titulo": "Nova função: Elegibilidade detalhada",
+          "descricao": "As funções podem selecionar postos e graduações, companhias, seções ou militares específicos. Também é possível distribuir vagas por companhia e organizar grupos de antiguidade."
+        },
+        {
+          "titulo": "Melhoria: Assistente de configuração",
+          "descricao": "A edição foi organizada em etapas para regras gerais, trocas, funções, equipe e antiguidade, descanso, impedimentos e revisão."
+        },
+        {
+          "titulo": "Melhoria: Descanso por função",
+          "descricao": "As relações de descanso entre serviços passaram a considerar funções específicas, além das configurações gerais da escala."
+        },
+        {
+          "titulo": "Nova função: Grupos com fila compartilhada",
+          "descricao": "As funções podem ser reunidas em grupos de antiguidade com fila compartilhada. A configuração também passou a distinguir a permissão de choque de companhia da regra de choque de seção."
+        }
+      ]
+    },
+    {
+      "id": "v1.06",
+      "titulo": "Duplicação e Reutilização de Configurações de Escala",
+      "versao": "V1.06",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-07-08T14:28:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Duplicar escalas e funções",
+          "descricao": "Adicionadas ações para copiar escalas e funções, permitindo revisar a cópia antes de salvar e reduzir o preenchimento repetido."
+        },
+        {
+          "titulo": "Nova função: Modelos reutilizáveis",
+          "descricao": "As configurações podem ser salvas como modelos e aplicadas em outras escalas. A aplicação conserva o nome e a situação ativa da escala de destino."
+        },
+        {
+          "titulo": "Nova função: Importar configurações",
+          "descricao": "Adicionada importação de configurações de escala para reaproveitar regras e composição de funções."
+        }
+      ]
+    },
+    {
+      "id": "v1.07",
+      "titulo": "Designações Semanais, Mensais e por Ciclo Personalizado",
+      "versao": "V1.07",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-07-09T15:16:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Periodicidade por função",
+          "descricao": "Além do serviço diário, as funções podem trabalhar com designações semanais, mensais ou personalizadas, com data de referência, intervalo e duração."
+        },
+        {
+          "titulo": "Nova função: Permanência durante o período",
+          "descricao": "É possível manter a designação em fins de semana e feriados e bloquear outras escalas durante o período, conforme a configuração da função."
+        },
+        {
+          "titulo": "Nova função: Contabilização configurável",
+          "descricao": "A movimentação da folga pode ocorrer no início, no fim ou em cada dia da designação, conforme a regra escolhida. O recurso depende de ativação nas funções extras."
+        }
+      ]
+    },
+    {
+      "id": "v1.08",
+      "titulo": "Aptidão e Disponibilidade Individual por Função",
+      "versao": "V1.08",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-07-11T13:32:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Vínculos por função",
+          "descricao": "A ficha do militar permite selecionar as funções em que ele participa dentro de cada escala, refinando o vínculo geral existente."
+        },
+        {
+          "titulo": "Nova função: Dias permitidos",
+          "descricao": "Adicionadas configurações de disponibilidade por função e por dias da semana para a seleção do efetivo."
+        },
+        {
+          "titulo": "Melhoria: Compatibilidade dos cadastros",
+          "descricao": "Os vínculos antigos apenas com a escala continuam sendo interpretados como participação nas respectivas funções, conforme a compatibilidade prevista no sistema."
+        }
+      ]
+    },
+    {
+      "id": "v1.09",
+      "titulo": "Marco Inicial de Operação e Início das Funções",
+      "versao": "V1.09",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-07-13T13:31:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Data inicial da operação",
+          "descricao": "Adicionado marco inicial para delimitar o período operacional utilizado na geração e na navegação das escalas."
+        },
+        {
+          "titulo": "Nova função: Início por função",
+          "descricao": "As funções podem possuir marco próprio, permitindo que novas atividades entrem em funcionamento em datas diferentes."
+        },
+        {
+          "titulo": "Melhoria: Validação das datas",
+          "descricao": "Fechamentos e designações diretas passam por validações de período no servidor, evitando operações anteriores ao marco permitido."
+        }
+      ]
+    },
+    {
+      "id": "v1.10",
+      "titulo": "Previsão de Escala Compartilhada entre Usuários",
+      "versao": "V1.10",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-07-15T11:38:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Publicação da previsão",
+          "descricao": "Adicionado armazenamento da previsão por escala, abrangendo o dia atual e os próximos 30 dias, com identificação de quem gerou e quando gerou."
+        },
+        {
+          "titulo": "Nova função: Consulta da previsão publicada",
+          "descricao": "Os usuários autorizados podem consultar a previsão compartilhada, com indicação da última geração, sem depender de uma simulação particular em cada computador."
+        },
+        {
+          "titulo": "Melhoria: Controle de geração simultânea",
+          "descricao": "A geração utiliza uma reserva temporária para reduzir conflitos entre operadores. A substituição da previsão é transacional e preserva a publicação anterior quando a nova gravação falha."
+        }
+      ]
+    },
+    {
+      "id": "v1.11",
+      "titulo": "Novas Visões de Consulta e Navegação das Escalas",
+      "versao": "V1.11",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-07-18T12:16:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Visão diária e consulta geral",
+          "descricao": "Adicionadas visões por dia e de consulta às escalas ativas, com controles de acesso específicos para cada modalidade."
+        },
+        {
+          "titulo": "Alteração: Referência semanal",
+          "descricao": "A navegação operacional passou da referência de quarta-feira para quinta-feira, com deslocamento do período em intervalos de sete dias."
+        },
+        {
+          "titulo": "Melhoria: Navegação integrada",
+          "descricao": "O período exibido considera o marco inicial de operação, e a consulta utiliza a previsão publicada e os fechamentos disponíveis."
+        }
+      ]
+    },
+    {
+      "id": "v1.12",
+      "titulo": "Mapa Diário de Folgas por Escala e Função",
+      "versao": "V1.12",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-07-19T13:18:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Linha do tempo de folgas",
+          "descricao": "Adicionada subaba de folgas com acompanhamento diário por militar, escala e função, reunindo serviços, impedimentos e saldos."
+        },
+        {
+          "titulo": "Nova função: Consulta e exportação",
+          "descricao": "O mapa oferece navegação entre datas, centralização no dia atual, ordenação e exportação para Excel."
+        },
+        {
+          "titulo": "Nova função: Ações no mapa",
+          "descricao": "Menus contextuais permitem acessar ações relacionadas ao dia ou militar e remover serviços quando o usuário possui a permissão correspondente."
+        },
+        {
+          "titulo": "Melhoria: Integração com a geração",
+          "descricao": "O mapa utiliza a simulação do motor principal para compor a projeção das folgas e das futuras designações."
+        }
+      ]
+    },
+    {
+      "id": "v1.13",
+      "titulo": "Correções no Cálculo de Folgas e na Reconstrução das Filas",
+      "versao": "V1.13",
+      "categoria": "Correção",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-07-22T15:33:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Correção: Fila estável ao navegar",
+          "descricao": "A reconstrução utiliza uma referência operacional que não depende do mês ou da janela visível, evitando reiniciar a fila ao avançar a consulta."
+        },
+        {
+          "titulo": "Correção: Relógios preto e vermelho",
+          "descricao": "O mapa mantém contagens independentes por cor. Um serviço vermelho reinicia a folga vermelha sem zerar a preta, e vice-versa."
+        },
+        {
+          "titulo": "Correção: Histórico sem interferência futura",
+          "descricao": "A reconstrução diária evita que serviços ou projeções futuras alterem a folga dos dias anteriores. Os saldos iniciais são tratados como referências, sem criar serviços fictícios."
+        },
+        {
+          "titulo": "Correção: Atualização das cores",
+          "descricao": "O cálculo considera a cor operacional do calendário e invalida referências antigas após alterações, evitando reutilizar saldos incompatíveis com dias corrigidos."
+        },
+        {
+          "titulo": "Correção: Descanso de quem executou o serviço",
+          "descricao": "As regras de descanso entre escalas consideram o substituto que efetivamente assumiu a vaga, distinguindo-o do titular usado na contabilização da troca."
+        },
+        {
+          "titulo": "Correção: Limites da seleção alternativa",
+          "descricao": "A seleção alternativa por falta de candidatos limita a flexibilização aos conflitos de companhia ou seção, preservando as verificações de descanso, impedimento e duplicidade de serviço previstas no motor."
+        }
+      ]
+    },
+    {
+      "id": "v1.14",
+      "titulo": "Inicialização e Importação dos Saldos de Folga",
+      "versao": "V1.14",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-07-24T12:35:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Saldos por referência",
+          "descricao": "Adicionada inicialização dos saldos preto e vermelho por escala, função e militar, com datas de referência independentes."
+        },
+        {
+          "titulo": "Nova função: Preenchimento em lote",
+          "descricao": "A tela permite filtrar militares, recalcular referências e importar ou baixar modelo CSV para preenchimento dos saldos."
+        },
+        {
+          "titulo": "Melhoria: Validação e rastreabilidade",
+          "descricao": "O servidor valida militares, permissões, saldos e datas, grava o lote em transação e registra a operação na auditoria. Os saldos não são lançados como serviços realizados."
+        }
+      ]
+    },
+    {
+      "id": "v1.15",
+      "titulo": "Importação de Histórico e Lançamento Manual de Serviços",
+      "versao": "V1.15",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-07-26T13:42:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Histórico a partir de ODS",
+          "descricao": "Adicionada análise de planilhas ODS de serviços, com associação dos nomes ao efetivo e confirmação da importação."
+        },
+        {
+          "titulo": "Nova função: Serviço manual na ficha",
+          "descricao": "O histórico individual permite registrar serviços manualmente por data, escala e função, para complementar informações anteriores ou externas ao fluxo normal."
+        },
+        {
+          "titulo": "Melhoria: Origem identificada",
+          "descricao": "Os lançamentos manuais possuem origem própria e podem ser excluídos sem remover diretamente os registros normais de uma escala fechada."
+        }
+      ]
+    },
+    {
+      "id": "v1.16",
+      "titulo": "Solicitação, Aprovação e Simulação de Trocas de Serviço",
+      "versao": "V1.16",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-07-28T14:51:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Fluxo de aprovação",
+          "descricao": "As trocas podem seguir regras configuradas por escala, com solicitação, análise, aprovação ou recusa pelos usuários autorizados."
+        },
+        {
+          "titulo": "Nova função: Prévia do impacto",
+          "descricao": "A seleção do substituto pode simular o efeito da troca na escala, apresentando as alterações antes da confirmação."
+        },
+        {
+          "titulo": "Melhoria: Pesquisa de substitutos",
+          "descricao": "A interface detalha os motivos de restrição dos candidatos e oferece tratamento de exceções, conforme os recursos e permissões habilitados."
+        },
+        {
+          "titulo": "Melhoria: Histórico da solicitação",
+          "descricao": "As informações da solicitação e da decisão passam a integrar a rastreabilidade das trocas."
+        }
+      ]
+    },
+    {
+      "id": "v1.17",
+      "titulo": "Correções na Compensação e no Desfazimento de Trocas",
+      "versao": "V1.17",
+      "categoria": "Correção",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-07-30T12:05:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Correção: Compensação na vez correta",
+          "descricao": "A troca direta mantém uma pendência de compensação a ser resolvida quando chegar a vez natural do substituto, evitando fixar a devolução com base em uma previsão desatualizada."
+        },
+        {
+          "titulo": "Correção: Separação entre presença e fila",
+          "descricao": "O motor distingue quem ocupou a vaga, quem deve movimentar a fila e quem precisa cumprir o descanso, conforme o tipo de troca."
+        },
+        {
+          "titulo": "Correção: Substituição de uma troca existente",
+          "descricao": "A edição ou remoção de uma troca trata o par correspondente, evitando cancelar indevidamente outras compensações."
+        },
+        {
+          "titulo": "Correção: Compatibilidade de compensações anteriores",
+          "descricao": "Adicionado tratamento de registros de compensação gravados pelo algoritmo anterior, para reconstruir as pendências segundo a regra atual."
+        }
+      ]
+    },
+    {
+      "id": "v1.18",
+      "titulo": "Fechamento Seletivo e Preservação da Escala Reaberta",
+      "versao": "V1.18",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-08-01T14:44:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Fechamento por escala",
+          "descricao": "O gerenciamento permite selecionar quais escalas serão fechadas, em vez de depender somente do fechamento conjunto do dia."
+        },
+        {
+          "titulo": "Nova função: Versão preservada na reabertura",
+          "descricao": "Ao reabrir, o sistema mantém uma cópia da escala e permite alternar entre a versão preservada e a recalculada."
+        },
+        {
+          "titulo": "Correção: Fechamento parcial respeitado",
+          "descricao": "Na geração, a equipe já fechada passa a ser a referência operacional, evitando movimentar a folga de militares de uma equipe provisória que não prestou o serviço."
+        },
+        {
+          "titulo": "Correção: Gravação integral e reabertura repetida",
+          "descricao": "O fechamento usa transação com conexão exclusiva e reversão em caso de erro. Repetir a reabertura não deve apagar a versão anteriormente preservada."
+        },
+        {
+          "titulo": "Correção: Vagas removidas",
+          "descricao": "As vagas removidas permanecem representadas no fechamento administrativo, sem contar como serviço prestado."
+        }
+      ]
+    },
+    {
+      "id": "v1.19",
+      "titulo": "Calendário de Feriados e Consistência dos Dias Pretos e Vermelhos",
+      "versao": "V1.19",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-08-02T12:40:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Melhoria: Feriados calculados localmente",
+          "descricao": "O calendário ganhou cálculo local de feriados móveis a partir da Páscoa, complementando a consulta externa e os feriados fixos."
+        },
+        {
+          "titulo": "Correção: Prioridade das marcações manuais",
+          "descricao": "As alterações explícitas de cor têm prioridade sobre as cores inferidas do histórico, mantendo a decisão operacional do usuário."
+        },
+        {
+          "titulo": "Melhoria: Aplicação nos módulos",
+          "descricao": "Os feriados e as marcações são considerados na geração, no mapa de folgas e no cálculo da apresentação após impedimentos."
+        }
+      ]
+    },
+    {
+      "id": "v1.20",
+      "titulo": "Cadastro Guiado, Filtros e Antiguidade do Efetivo",
+      "versao": "V1.20",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-08-04T11:08:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Melhoria: Cadastro em etapas",
+          "descricao": "O cadastro foi reorganizado em um assistente com validação das etapas e resumo para conferência antes do envio."
+        },
+        {
+          "titulo": "Melhoria: Pesquisa e filtros",
+          "descricao": "A consulta do efetivo recebeu filtros adicionais, inclusive por funções, e índice de busca para facilitar a localização dos militares."
+        },
+        {
+          "titulo": "Nova função: Ordem manual de antiguidade",
+          "descricao": "Adicionada movimentação da ordem de antiguidade dentro de uma mesma graduação, com persistência e validação no servidor."
+        },
+        {
+          "titulo": "Nova função: Solicitações de alteração",
+          "descricao": "Alterações cadastrais podem passar por um fluxo de solicitação e análise, com visualização das diferenças e decisão do responsável autorizado."
+        }
+      ]
+    },
+    {
+      "id": "v1.21",
+      "titulo": "Novas Ações em Lote para Administração do Efetivo",
+      "versao": "V1.21",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-08-07T11:38:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Atualização de informações",
+          "descricao": "Adicionada edição em lote de informações cadastrais, com seleção, filtros, aplicação de valores comuns e resumo das alterações."
+        },
+        {
+          "titulo": "Melhoria: Escalas e funções em lote",
+          "descricao": "A ferramenta existente de vínculos foi ampliada para tratar funções e distinguir inclusão, remoção e limpeza do efetivo de uma escala."
+        },
+        {
+          "titulo": "Nova função: Exclusão em massa",
+          "descricao": "Adicionada seleção de militares para exclusão conjunta, com etapa específica de confirmação e checagem de permissões no servidor."
+        },
+        {
+          "titulo": "Nova função: Envio de acessos em lote",
+          "descricao": "Adicionada seleção de usuários para envio de links de senha em massa, com acompanhamento do progresso."
+        }
+      ]
+    },
+    {
+      "id": "v1.22",
+      "titulo": "Importação de Cadastros e Atualização de Dados por Excel",
+      "versao": "V1.22",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-08-09T12:48:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Modelo de importação",
+          "descricao": "O sistema disponibiliza modelo de planilha para cadastro do efetivo, análise prévia, indicação de inconsistências e confirmação dos registros."
+        },
+        {
+          "titulo": "Nova função: Dados pessoais em planilha",
+          "descricao": "Adicionada exportação dos dados pessoais para edição e reimportação, com prévia das diferenças antes de salvar."
+        },
+        {
+          "titulo": "Melhoria: Proteção contra planilha desatualizada",
+          "descricao": "A atualização dos dados pessoais verifica identificadores e versão dos registros para detectar alterações concorrentes. Também valida datas, e-mails e valores dos catálogos."
+        },
+        {
+          "titulo": "Correção: Ferramenta para datas deslocadas",
+          "descricao": "Incluída ferramenta exclusiva do Operador TI para revisar e corrigir o recuo de um dia em datas de importações antigas. A aplicação exige confirmação explícita e não ocorre automaticamente."
+        }
+      ]
+    },
+    {
+      "id": "v1.23",
+      "titulo": "Ficha Histórica Integrada do Militar",
+      "versao": "V1.23",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-08-12T10:18:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Melhoria: Serviços, impedimentos e trocas",
+          "descricao": "A ficha individual foi ampliada para reunir a linha do tempo dos serviços, impedimentos e trocas, com filtro por mês e filtros próprios dos serviços."
+        },
+        {
+          "titulo": "Melhoria: Identificação dos registros",
+          "descricao": "Os serviços passam a indicar melhor a escala, função, cor e origem, facilitando a conferência do histórico individual."
+        },
+        {
+          "titulo": "Correção: Trocas duplicadas na apresentação",
+          "descricao": "Adicionado tratamento para deduplicar a exibição do histórico de trocas."
+        },
+        {
+          "titulo": "Correção: Escalas excluídas com histórico preservado",
+          "descricao": "Ao excluir uma escala, os serviços realizados são arquivados para consulta individual, enquanto vínculos e registros operacionais associados são limpos."
+        }
+      ]
+    },
+    {
+      "id": "v1.24",
+      "titulo": "Gestão Ampliada de Impedimentos e Documentos Comprobatórios",
+      "versao": "V1.24",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-08-13T10:07:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Registro coletivo e por função",
+          "descricao": "Adicionada seleção de vários militares e delimitação dos impedimentos por funções, além do bloqueio por escala."
+        },
+        {
+          "titulo": "Nova função: Anexos",
+          "descricao": "Os impedimentos podem receber documento comprobatório, com acesso ao anexo e validações de formato e tamanho."
+        },
+        {
+          "titulo": "Melhoria: Edição de grupos",
+          "descricao": "O gerenciamento permite editar lotes, separar um militar do grupo e prorrogar o impedimento."
+        },
+        {
+          "titulo": "Melhoria: Apresentação e histórico",
+          "descricao": "Adicionados cálculo da apresentação, confirmação de aptidão e cancelamento com preservação do registro no histórico."
+        },
+        {
+          "titulo": "Correção: Reconstrução de períodos antigos",
+          "descricao": "A consulta histórica considera impedimentos encerrados ou expirados que atingiam o período reconstruído, incluindo compatibilidade com registros antigos."
+        },
+        {
+          "titulo": "Correção: Seleção durante a edição",
+          "descricao": "A seleção de integrantes é preservada ao mudar de companhia, permitindo revisar e remover integrantes já vinculados."
+        }
+      ]
+    },
+    {
+      "id": "v1.25",
+      "titulo": "Exportação de Escalas em PDF com Perfis e Assinaturas",
+      "versao": "V1.25",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-08-16T15:35:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Modelos por usuário",
+          "descricao": "Adicionados perfis de exportação para salvar seleções de escalas e funções e reaplicá-las em futuras emissões."
+        },
+        {
+          "titulo": "Melhoria: PDF diário e do período",
+          "descricao": "A exportação recebeu modalidades específicas para o dia e para o período, com seleção do conteúdo a incluir."
+        },
+        {
+          "titulo": "Nova função: Assinaturas e observações",
+          "descricao": "Adicionada configuração de signatários e observações das previsões, incluindo importação e exportação dessas configurações."
+        }
+      ]
+    },
+    {
+      "id": "v1.26",
+      "titulo": "Modelos Personalizados e Edição do Boletim Interno",
+      "versao": "V1.26",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-08-18T13:29:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Modelo individual",
+          "descricao": "O usuário pode salvar seu modelo de BI, restaurar o padrão e importar ou exportar o modelo para reutilização."
+        },
+        {
+          "titulo": "Melhoria: Texto por função",
+          "descricao": "A composição do BI passou a considerar as funções configuradas, com prévia, datas por extenso e organização dos registros."
+        },
+        {
+          "titulo": "Melhoria: Editor formatado",
+          "descricao": "Adicionados recursos de formatação no modelo e no texto gerado, com tratamento do conteúdo HTML e preservação de espaços."
+        }
+      ]
+    },
+    {
+      "id": "v1.27",
+      "titulo": "Relatório de Serviços e Análise de Distribuição por Função",
+      "versao": "V1.27",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-08-19T10:01:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Relatório de serviços em Excel",
+          "descricao": "Adicionada exportação de serviços com seleção de militares e filtros, incluindo opção de acrescentar impedimentos e escolher os motivos considerados."
+        },
+        {
+          "titulo": "Nova função: Distribuição por função",
+          "descricao": "Adicionado relatório que cruza serviços do período, histórico e efetivo para analisar a distribuição entre as funções e classificar o equilíbrio."
+        },
+        {
+          "titulo": "Melhoria: Apresentação da planilha",
+          "descricao": "O relatório de serviços utiliza planilhas formatadas, com títulos, datas, identificação das cores e configuração de impressão."
+        }
+      ]
+    },
+    {
+      "id": "v1.28",
+      "titulo": "Painel de Comando com Gráficos e Agrupamentos Configuráveis",
+      "versao": "V1.28",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-08-22T11:10:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Melhoria: Gráficos analíticos",
+          "descricao": "O painel recebeu controles para alternar os gráficos e detalhar a visualização dos indicadores."
+        },
+        {
+          "titulo": "Nova função: Agrupamento organizacional",
+          "descricao": "O Operador TI pode configurar o agrupamento do painel por companhia ou seção."
+        },
+        {
+          "titulo": "Melhoria: Módulos e carregamento",
+          "descricao": "A exibição dos módulos acompanha os recursos liberados, com estado visual de carregamento. Marcadores de vagas removidas são tratados separadamente dos serviços efetivos."
+        }
+      ]
+    },
+    {
+      "id": "v1.29",
+      "titulo": "Auditoria Detalhada e Textos Configuráveis da Memória de Cálculo",
+      "versao": "V1.29",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-08-23T13:06:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Melhoria: Detalhes das alterações",
+          "descricao": "A auditoria ganhou apresentação dos valores anteriores e novos e informações adicionais sobre a origem e o motivo das operações."
+        },
+        {
+          "titulo": "Melhoria: Justificativas operacionais",
+          "descricao": "A memória de cálculo foi ampliada para explicar designações por função, trocas, compensações, intervenções manuais e situações de falta de efetivo."
+        },
+        {
+          "titulo": "Nova função: Textos ajustáveis",
+          "descricao": "O Operador TI pode personalizar os textos da auditoria de folga com campos variáveis e restaurar os textos padrão."
+        },
+        {
+          "titulo": "Melhoria: Consulta a partir da escala",
+          "descricao": "Adicionados acessos à auditoria dos registros fechados e das vagas sem efetivo. A justificativa de preterição já existente foi ampliada, sem ser tratada como recurso inteiramente novo."
+        }
+      ]
+    },
+    {
+      "id": "v1.30",
+      "titulo": "Central de Notificações Operacionais",
+      "versao": "V1.30",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-08-26T16:26:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Alertas das operações",
+          "descricao": "Adicionada central de notificações alimentada por ações operacionais registradas pelo sistema."
+        },
+        {
+          "titulo": "Nova função: Filtros e leitura",
+          "descricao": "A central permite pesquisar e filtrar mensagens, visualizar o período considerado e marcar notificações individuais, exibidas ou todas como lidas."
+        }
+      ]
+    },
+    {
+      "id": "v1.31",
+      "titulo": "Primeiro Acesso e Recuperação de Senha por E-mail",
+      "versao": "V1.31",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-08-28T14:04:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Primeiro acesso assistido",
+          "descricao": "Adicionado fluxo público que confere os dados cadastrais e envia código por e-mail para prosseguir com a definição da senha."
+        },
+        {
+          "titulo": "Nova função: Criação pelo perfil padrão",
+          "descricao": "Quando ainda não existe acesso, a confirmação pode criar a credencial com o perfil padrão configurado, desde que esse perfil esteja definido."
+        },
+        {
+          "titulo": "Nova função: Redefinição por e-mail",
+          "descricao": "Adicionadas recuperação pública e entrega administrativa do link por e-mail, com mensagem personalizada pela identidade da organização."
+        },
+        {
+          "titulo": "Melhoria: Alternativa de entrega manual",
+          "descricao": "O envio administrativo dispõe de retorno para entrega manual quando o SMTP não está configurado e de tratamento de falhas de envio. O funcionamento por e-mail depende da configuração do servidor."
+        },
+        {
+          "titulo": "Correção: Falha no envio administrativo",
+          "descricao": "Se o envio administrativo por SMTP falhar, o servidor tenta restaurar a senha e o token anteriores, com condição que evita sobrescrever uma alteração concorrente do acesso. Se a restauração também falhar, a interface recebe orientação para gerar um novo link manual."
+        }
+      ]
+    },
+    {
+      "id": "v1.32",
+      "titulo": "Reforço da Proteção de Credenciais, Sessões e Requisições",
+      "versao": "V1.32",
+      "categoria": "Segurança",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-08-30T10:03:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Segurança: Proteção das senhas",
+          "descricao": "Adicionado armazenamento com hash scrypt e salt, migração de senhas legadas e validação de tamanho. As credenciais protegidas não são enviadas ao navegador nas consultas de acesso."
+        },
+        {
+          "titulo": "Segurança: Sessão por cookie",
+          "descricao": "A autenticação passou a contar com cookie de sessão protegido, encerramento pelo servidor e verificações de origem das requisições."
+        },
+        {
+          "titulo": "Segurança: Limites de tentativas",
+          "descricao": "Adicionados limitadores para login, primeiro acesso, confirmação de códigos, redefinição de senha e requisições da aplicação."
+        },
+        {
+          "titulo": "Segurança: Arquivos e conteúdo",
+          "descricao": "Reforçadas a publicação restrita de arquivos, as validações de imagens e anexos e a limpeza do HTML de conteúdos editáveis."
+        },
+        {
+          "titulo": "Segurança: Dados no navegador",
+          "descricao": "Removido o cache persistente antigo do efetivo, mantendo os dados pessoais desse carregamento em memória durante o uso."
+        }
+      ]
+    },
+    {
+      "id": "v1.33",
+      "titulo": "Sincronização entre Computadores e Atualização das Permissões",
+      "versao": "V1.33",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-09-01T11:43:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Monitor de alterações",
+          "descricao": "Adicionado monitor de versão para identificar alterações feitas em outros computadores e atualizar as telas afetadas."
+        },
+        {
+          "titulo": "Correção: Permissões da sessão aberta",
+          "descricao": "Mudanças nos perfis e vínculos provocam revalidação da sessão e da interface, inclusive quando o usuário está com um formulário aberto."
+        },
+        {
+          "titulo": "Correção: Mapas e listas desatualizados",
+          "descricao": "O mapa de folgas e a lista de impedimentos recebem invalidação ou atualização após mudanças, inclusive originadas no próprio navegador."
+        },
+        {
+          "titulo": "Correção: Configurações antigas no navegador",
+          "descricao": "O salvamento de escalas diferencia itens editados e remoções explícitas, reduzindo o risco de uma tela antiga apagar escalas ausentes de sua cópia local."
+        },
+        {
+          "titulo": "Melhoria: Atualização durante o uso",
+          "descricao": "A sincronização considera formulários em edição e gestos de rolagem para reduzir interrupções na interface."
+        }
+      ]
+    },
+    {
+      "id": "v1.34",
+      "titulo": "Identidade Visual e Personalização para Diferentes Organizações",
+      "versao": "V1.34",
+      "categoria": "Personalização",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-09-03T14:45:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Identidade institucional",
+          "descricao": "Adicionada configuração de identificação, logo e cores do sistema, com aplicação na interface e nas mensagens de e-mail."
+        },
+        {
+          "titulo": "Nova função: Tela de entrada",
+          "descricao": "As imagens de login podem ser selecionadas, reorganizadas e removidas pelo configurador."
+        },
+        {
+          "titulo": "Nova função: Catálogos da organização",
+          "descricao": "Postos e graduações, companhias, seções e motivos de impedimento podem ser administrados nos ajustes."
+        },
+        {
+          "titulo": "Melhoria: Links e equipe pública",
+          "descricao": "Os links úteis passaram a ter configuração própria, e foi adicionado endpoint com dados resumidos da equipe administrativa para apresentação pública."
+        },
+        {
+          "titulo": "Alteração: Identificação desta instalação",
+          "descricao": "A cópia nova foi adaptada da identidade da DAP para o 16º Batalhão Logístico, incluindo nome do projeto e recursos visuais."
+        }
+      ]
+    },
+    {
+      "id": "v1.35",
+      "titulo": "Central do Operador TI e Recursos Opcionais",
+      "versao": "V1.35",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-09-04T13:34:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Administração por módulos",
+          "descricao": "As ferramentas técnicas foram reunidas em uma central de módulos, com áreas para acessos, identidade, perfis, personalização e atendimento."
+        },
+        {
+          "titulo": "Nova função: Ativação de funções extras",
+          "descricao": "O Operador TI pode habilitar ou desabilitar recursos opcionais de acesso, escalas, documentos e outras áreas, conforme as necessidades da organização."
+        },
+        {
+          "titulo": "Melhoria: Separação das responsabilidades",
+          "descricao": "Os ajustes operacionais e as configurações exclusivas de TI possuem controles de acesso próprios."
+        }
+      ]
+    },
+    {
+      "id": "v1.36",
+      "titulo": "Central de Ajuda Integrada ao Sistema",
+      "versao": "V1.36",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-09-06T15:10:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Artigos de orientação",
+          "descricao": "Adicionada central de ajuda com consulta e abertura de tópicos para orientar o uso do sistema."
+        },
+        {
+          "titulo": "Nova função: Gestão dos conteúdos",
+          "descricao": "Usuários autorizados podem administrar os artigos e seus vínculos, com validação das permissões e tratamento do conteúdo HTML."
+        },
+        {
+          "titulo": "Melhoria: Acesso contextual",
+          "descricao": "O assistente SAFUS pode pesquisar os tópicos e abrir diretamente o conteúdo correspondente à dúvida."
+        }
+      ]
+    },
+    {
+      "id": "v1.37",
+      "titulo": "Soldado SAFUS e Registro de Chamados para o Operador TI",
+      "versao": "V1.37",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-09-08T10:51:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Assistente de atendimento",
+          "descricao": "Adicionado painel do Soldado SAFUS com ações guiadas para consultar ajuda e reportar problemas."
+        },
+        {
+          "titulo": "Nova função: Chamados com anexos",
+          "descricao": "O usuário pode enviar assunto, descrição, prioridade e capturas de tela, acompanhando os chamados associados ao seu acesso."
+        },
+        {
+          "titulo": "Nova função: Resposta e encerramento",
+          "descricao": "O Operador TI dispõe de lista de pendências e histórico, registra a orientação ou solução e finaliza o chamado. O retorno fica disponível ao solicitante."
+        }
+      ]
+    },
+    {
+      "id": "v1.38",
+      "titulo": "Agenda Pessoal e Lembretes pelo SAFUS",
+      "versao": "V1.38",
+      "categoria": "Nova função",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-09-11T15:46:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Lembretes pessoais",
+          "descricao": "Adicionado cadastro guiado de lembretes com título, data, horário, descrição opcional e repetição semanal."
+        },
+        {
+          "titulo": "Nova função: Agenda por dia",
+          "descricao": "A agenda permite navegar entre datas, editar, excluir e marcar ocorrências como concluídas."
+        },
+        {
+          "titulo": "Nova função: Avisos no sistema",
+          "descricao": "O SAFUS verifica os lembretes durante o uso do sistema e apresenta os avisos na conversa, com opção de concluir ou abrir a agenda."
+        }
+      ]
+    },
+    {
+      "id": "v1.39",
+      "titulo": "Otimizações de Carregamento e Uso em Computadores Antigos",
+      "versao": "V1.39",
+      "categoria": "Melhoria",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-09-12T16:50:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Melhoria: Entrega de arquivos",
+          "descricao": "Adicionada compactação gzip dos arquivos de interface, cache da versão compactada e validação por ETag."
+        },
+        {
+          "titulo": "Melhoria: Listas extensas",
+          "descricao": "A renderização do efetivo passou a usar índice de pesquisa, atualização agendada e preenchimento em lotes. As fotos de perfil contam com carregamento dedicado."
+        },
+        {
+          "titulo": "Melhoria: Efeitos visuais",
+          "descricao": "Incluído tratamento para reduzir efeitos pesados, como desfoques, sombras e animações, em equipamentos com menor capacidade."
+        },
+        {
+          "titulo": "Melhoria: Retorno durante operações",
+          "descricao": "Downloads e operações mais demoradas receberam indicadores de progresso e estados de carregamento."
+        }
+      ]
+    },
+    {
+      "id": "v1.40",
+      "titulo": "Suporte a PostgreSQL e Ferramentas de Implantação",
+      "versao": "V1.40",
+      "categoria": "Infraestrutura",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-09-15T11:09:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Banco PostgreSQL",
+          "descricao": "Adicionada camada de acesso ao PostgreSQL, mantendo compatibilidade com o modo SQLite e configuração por variáveis de ambiente."
+        },
+        {
+          "titulo": "Nova função: Migração do banco",
+          "descricao": "Incluído utilitário para migrar a base SQLite para PostgreSQL, com verificações de conteúdo previstas no processo."
+        },
+        {
+          "titulo": "Infraestrutura: Implantação documentada",
+          "descricao": "Adicionados guias de migração, configuração de e-mail, atualização em Linux e exemplo de configuração do Nginx."
+        },
+        {
+          "titulo": "Infraestrutura: Pacote para outra organização",
+          "descricao": "Incluído pacote de distribuição para implantação em uma nova organização, com documentação e utilitário para criação do primeiro operador. A presença desses arquivos não comprova que a implantação tenha sido executada."
+        }
+      ]
+    },
+    {
+      "id": "v1.41",
+      "titulo": "Ferramentas de Backup Criptografado e Verificação de Segurança",
+      "versao": "V1.41",
+      "categoria": "Segurança",
+      "autor": "SD.AGUIAR",
+      "data_hora": "2026-09-16T15:40:00-03:00",
+      "blocos": [
+        {
+          "titulo": "Nova função: Proteção das cópias",
+          "descricao": "Adicionados utilitários para criar backups criptografados e restaurar seu conteúdo, utilizando AES-256-GCM."
+        },
+        {
+          "titulo": "Nova função: Rotação de segredos",
+          "descricao": "Incluído utilitário para renovar segredos e ajustar credenciais conforme a configuração do ambiente."
+        },
+        {
+          "titulo": "Infraestrutura: Verificações de segurança",
+          "descricao": "Adicionados scripts de checagem estática e de execução, configuração SQL de segurança e orientações para implantação."
+        },
+        {
+          "titulo": "Infraestrutura: Dependências declaradas",
+          "descricao": "O projeto passou a declarar versões das dependências de servidor e bibliotecas de planilhas, e-mail, banco e tratamento de conteúdo. Foram incluídos testes específicos de permissões, equipe pública e redefinição por SMTP."
         }
       ]
     }
